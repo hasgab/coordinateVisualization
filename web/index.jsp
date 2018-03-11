@@ -9,7 +9,7 @@
 <canvas id="canvas1"></canvas>
 
 <script id="script1" type="text/javascript">
-    $(document).ready(getAllPoints) ;
+    $(document).ready(getAllPoints);
 
     function getAllPoints() {
         $.getJSON('/getPoints', function (points) {
@@ -25,37 +25,7 @@
             var nodeColour = processing.color(40, 168, 107);
             var edgeColour = processing.color(34, 68, 204);
             var nodeSize = 16;
-            //
-            //        var nodes = [{
-            //            "x": -100.0,
-            //            "y": -100.0,
-            //            "z": -100.0
-            //        },
-            //            {"x": -100.0, "y": -100.0, "z": 100.0}, {"x": -100.0, "y": 100.0, "z": -100.0}, {
-            //                "x": -100.0,
-            //                "y": 100.0,
-            //                "z": 100.0
-            //            }, {"x": 100.0, "y": -100.0, "z": -100.0}, {"x": 100.0, "y": -100.0, "z": 100.0}, {
-            //                "x": 100.0,
-            //                "y": 100.0,
-            //                "z": -100.0
-            //            }, {"x": 100.0, "y": 100.0, "z": 100.0}];
 
-
-//        var edge0 = [0, 1];
-//        var edge1 = [1, 3];
-//        var edge2 = [3, 2];
-//
-//        var edge3 = [2, 0];
-//        var edge4 = [4, 5];
-//        var edge5 = [5, 7];
-//        var edge6 = [7, 6];
-//        var edge7 = [6, 4];
-//        var edge8 = [0, 4];
-//        var edge9 = [1, 5];
-//        var edge10 = [2, 6];
-//        var edge11 = [3, 7];
-//        var edges = [edge0, edge1, edge2, edge3, edge4, edge5, edge6, edge7, edge8, edge9, edge10, edge11];
 
             var edge0 = [0, 1];
             var edge1 = [1, 2];
@@ -167,9 +137,7 @@
         };
         var canvas = document.getElementById("canvas1");
         var p = new Processing(canvas, sketch);
-
     }
-
 
 
 </script>
